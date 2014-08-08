@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+    <body>
+
+    <div id="wrapper">
+      {% include header.html %}
+      {% include sidenav.html %}
+
+      <div id="page-wrapper">
+        <div class="container-fluid">
+
+          {% if page.title-small %}
+            <h1 class="page-header" > <small>{{ page.title-small }}</small> {{ page.title-large }} </h1>
+          {% else %}
+              <h1 class="page-header" > {{ page.title }} </h1>
+          {% endif %}
+
+          {{ content }}
+          
+        </div>
+      </div>
+
+    </div>
+    
+    {% include scripts.html %}
+    </body>
+    
+</html>

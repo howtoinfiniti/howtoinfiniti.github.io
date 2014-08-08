@@ -1,0 +1,9 @@
+# Site settings
+name: How to Infiniti Global
+title: Your awesome title
+email: jorgevmatarrita@gmail.com
+url: "howtoinfiniti.github.io"
+
+# Build settings
+markdown: kramdown
+permalinks: pretty
