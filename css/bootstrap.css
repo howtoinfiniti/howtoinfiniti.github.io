@@ -1186,6 +1186,9 @@ a.text-danger:hover {
   color: #fff;
   background-color: #428bca;
 }
+span.bg {
+  padding: .2em .5em;
+}
 a.bg-primary:hover {
   background-color: #3071a9;
 }
