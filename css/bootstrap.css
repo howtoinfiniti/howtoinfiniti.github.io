@@ -12,6 +12,7 @@ html {
 }
 body {
   margin: 0;
+  border-bottom: 1em solid #333;
 }
 article,
 aside,
@@ -939,6 +940,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+.img-responsive.centered {
+  margin: 0 auto;
+}
 .img-rounded {
   border-radius: 6px;
 }
@@ -1000,6 +1004,7 @@ h6,
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
+  padding: 16px 0;
 }
 h1 small,
 h2 small,
@@ -1213,6 +1218,15 @@ a.bg-warning:hover {
 .bg-danger {
   background-color: #f2dede;
 }
+.bg-int {
+  background: #6a8ee8;
+}
+.bg-staging {
+  background: #c9c9c9;
+}
+.bg-prod {
+  background: #cc9ff4;
+}
 a.bg-danger:hover {
   background-color: #e4b9b9;
 }
@@ -1221,6 +1235,11 @@ a.bg-danger:hover {
   margin: 40px 0 20px;
   border-bottom: 1px solid #eee;
 }
+.page-subtitle {
+  padding: 1.5em 0 .5em 0;
+  color: #196cc4;
+}
+
 ul,
 ol {
   margin-top: 0;
@@ -1232,6 +1251,7 @@ ul ol,
 ol ol {
   margin-bottom: 0;
 }
+
 .list-unstyled {
   padding-left: 0;
   list-style: none;
@@ -3892,15 +3912,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-size: 1.5em;
   line-height: 20px;
   color: whitesmoke;
-  transition: all .6s ease;
 }
 .navbar-brand:hover {
   color: whitesmoke;
-  padding-left: 50px;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
+}
+@media (max-width: 240px) {
+  .navbar-brand {
+    font-size: 1em;
+  }
 }
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
