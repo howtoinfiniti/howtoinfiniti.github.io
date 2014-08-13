@@ -1239,6 +1239,10 @@ a.bg-danger:hover {
   padding: 1.5em 0 .5em 0;
   color: #196cc4;
 }
+.page-minortitle {
+  padding: .5em 0;
+  color: #196cc4;
+}
 
 ul,
 ol {
